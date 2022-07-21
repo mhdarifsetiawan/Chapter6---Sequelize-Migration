@@ -18,7 +18,7 @@ productRouter.post("/products", async (req, res) => {
   res.json(newProduct);
 });
 
-// API to delete users
+// API to delete products
 productRouter.delete("/products/:id", async (req, res) => {
   const { id } = req.params;
   const deleteProduct = await productService.deleteProduct(id);

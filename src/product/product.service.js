@@ -26,7 +26,7 @@ const createNewProduct = async (
 
 const deleteProduct = async (productId) => {
   if (productId != 1) {
-    return await userRepo.deleteProduct(productId);
+    return await productRepo.deleteProduct(productId);
   } else {
     return "Delete is restricted for this product";
   }
